@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5", // versao do ecmascript que vai rodar no nosso ambiente de produçao
+    "module": "commonjs", // sistema de modulos utilizado no ambiente de prod
+    "lib": ["ES2015", "DOM"], // quais libs iriamos utilizar em nosso projeto
+    // allowJs = permite que voce importe no seu arquivo ts um arquivo js, é bom para quando tiver migrando projetos!
+    // checkJs = ele vai checkar da mesma maneira que checkaria o ts ele chekaria o js
+    // jsx = relacionado com react
+    // declaration = relacionado a declaration files
+    // sourceMap = vai gerar sourceMap pra vc
+    // outFile = especifica se quisessemos um arquivo só, tipo um bundle, se eu utilizar so o ts eu vou ter que colocar coisas adicionais pra funcionar no front
+    "outDir": "./dist", // pasta de saida
+    "rootDir": "./src", // pasta de entrada
+    // removeComments = remover comentarios quando compilar seu codigo
+    // noEmit = quando vc quer só checkar seus arquivos, nao quer compilar mas sim fazer o tsc só checkar os arquivos
+    // noEmitOnError = nao compila os arquivos pra javascript se tiver algum erro no código
+    "strict": true, // habilita as informações abaixo dele
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src"]
+}
